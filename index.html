@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة القبول - جامعة أم القرى</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ffffff;
+            color: rgb(9, 81, 76);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            background-color: #05696a;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav ul li a:hover {
+            background-color: #036c60;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #05696c;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 10px 15px;
+            display: block;
+            text-align: right;
+        }
+        .dropdown-content a:hover {
+            background-color: #067e80;
+        }
+        nav ul li:hover .dropdown-content {
+            display: block;
+        }
+        .hero {
+            background-image:image('s.png');
+            background-size: cover;
+            background-position: center;
+            color:black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: white;
+            background-color: #004d66;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary {
+            background-color: #00334d;
+        }
+        .btn:hover {
+            background-color: #005c7a;
+        }
+        footer {
+            background-color: #0a7274;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #cce7d4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* استجابة للشاشات الصغيرة */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            .btn {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png"  alt="شعار جامعة أم القرى" >
+        <div>
+            <span>بوابة القبول</span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.uqu.edu.sa/ar" target="_blank">الرئيسية</a></li>
+            <li><a href="#">عن الجامعة</a>
+                <div class="dropdown-content">
+                    <a href="https://www.uqu.edu.sa/ar/about" target="_blank">نبذة عن الجامعة</a>
+                    <a href="https://www.uqu.edu.sa/ar/about/vision-mission" target="_blank">الرؤية والرسالة</a>
+                    <a href="https://www.uqu.edu.sa/ar/about/administration" target="_blank">الإدارة</a>
+                    <a href="https://www.uqu.edu.sa/ar/about/leadership" target="_blank">القيادة</a>
+                </div>
+            </li>
+            <li><a href="#">القبول والتسجيل</a>
+                <div class="dropdown-content">
+                    <a href="https://admission.uqu.edu.sa/" target="_blank">شروط القبول</a>
+                    <a href="https://admission.uqu.edu.sa/" target="_blank">التقديم الإلكتروني</a>
+                    <a href="https://admission.uqu.edu.sa/" target="_blank">الاستعلام عن الطلب</a>
+                    <a href="https://admission.uqu.edu.sa/" target="_blank">نتائج القبول</a>
+                </div>
+            </li>
+            <li><a href="#">الكليات</a>
+                <div class="dropdown-content">
+                    <a href="https://medicine.uqu.edu.sa/" target="_blank">كلية الطب</a>
+                    <a href="https://eng.uqu.edu.sa/" target="_blank">كلية الهندسة</a>
+                    <a href="https://science.uqu.edu.sa/" target="_blank">كلية العلوم</a>
+                    <a href="https://business.uqu.edu.sa/" target="_blank">كلية إدارة الأعمال</a>
+                    <a href="https://arts.uqu.edu.sa/" target="_blank">كلية الآداب</a>
+                </div>
+            </li>
+            <li><a href="https://research.uqu.edu.sa/" target="_blank">البحث العلمي</a></li>
+            <li><a href="#">الخدمات الإلكترونية</a>
+                <div class="dropdown-content">
+                    <a href="https://eservices.uqu.edu.sa/" target="_blank">البوابة الإلكترونية</a>
+                    <a href="https://eservices.uqu.edu.sa/" target="_blank">نظام البانر</a>
+                    <a href="https://eservices.uqu.edu.sa/" target="_blank">نظام التعلم الإلكتروني</a>
+                </div>
+            </li>
+            <li><a href="https://www.uqu.edu.sa/ar/contact-us" target="_blank">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <image src='s.png'></image>
+        <h1>مرحباً بكم في بوابة القبول الإلكترونية</h1>
+        <p>بوابة التقديم الالحاقية على برامج الدبلوم </p>
+    </div>
+    <div class="container">
+        <h2> القبول والتسجيل</h2>
+        <a href="https://form.jotform.com/250414672068456" class="btn" target="_blank">تقديم طلب جديد</a>
+        <a href="https://admission.uqu.edu.sa/" class="btn btn-secondary" target="_blank">الدخول لطلب سابق</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 جامعة أم القرى. جميع الحقوق محفوظة.</p>
+        <p>
+            <a href="https://www.uqu.edu.sa/ar/privacy-policy" target="_blank">سياسة الخصوصية</a> | 
+            <a href="https://www.uqu.edu.sa/ar/terms-of-use" target="_blank">شروط الاستخدام</a> | 
+            <a href="https://www.uqu.edu.sa/ar/sitemap" target="_blank">خريطة الموقع</a>
+        </p>
+        <p>تواصل معنا: <a href="mailto:info@uqu.edu.sa">info@uqu.edu.sa</a></p>
+    </footer>
+</body>
+</html>
+```
